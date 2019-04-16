@@ -1,0 +1,29 @@
+<!-- Crie um algoritmo que receba:
+a) O valor da conta (consumo)
+b) O número de clientes 
+
+Depois disso  calcule e mostre no console:
+a) O valor dos 10% (cota do garçom)
+b) O valor final da conta (consumo + 10%)
+c) O valor que cada cliente deve pagar -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercicio 02</h1>
+    <script>
+        var consumo = Number(prompt('Valor da conta'));
+        var clientes = Number(prompt('Clientes'));
+        var garcom = consumo / 10;
+        var contaFinal = consumo + garcom;
+        var valorCliente = contaFinal / clientes;
+        console.log('O valor do garçom é ' + garcom.toFixed(2) + '\nO valor da conta final é ' + contaFinal.toFixed(2) + '\nO valor por cliente é ' + valorCliente.toFixed(2));
+    </script>
+</body>
+</html>

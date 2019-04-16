@@ -1,0 +1,27 @@
+<!-- Crie um algoritmo que leia o preço de um produto e
+mostre as opções de pagamento, considerando:
+a) Pagamento à vista (10% de desconto);
+b) Pagamento em 3x;
+Exemplo de saída: 
+    Preço: R$ 60.00
+    À vista: R$ 54.00
+    Ou 3x de: R$ 20.00 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercicio 03</h1>
+    <script>
+        var valorProduto = Number(prompt('Insira o valor do produto'));
+        var aVista = valorProduto - (valorProduto / 10);
+        var pagar3x = valorProduto / 3;
+        console.log('O valor do produto é ' + valorProduto.toFixed(2) + '\nO valor a vista é ' + aVista.toFixed(2) + '\nOu 3x de ' + pagar3x.toFixed(2));
+    </script>
+</body>
+</html>
