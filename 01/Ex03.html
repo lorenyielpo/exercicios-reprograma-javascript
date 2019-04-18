@@ -7,21 +7,11 @@ Exemplo de saída:
     À vista: R$ 54.00
     Ou 3x de: R$ 20.00 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Exercicio 03</h1>
-    <script>
-        var valorProduto = Number(prompt('Insira o valor do produto'));
-        var aVista = valorProduto - (valorProduto / 10);
-        var pagar3x = valorProduto / 3;
-        console.log('O valor do produto é ' + valorProduto.toFixed(2) + '\nO valor a vista é ' + aVista.toFixed(2) + '\nOu 3x de ' + pagar3x.toFixed(2));
-    </script>
-</body>
-</html>
+<meta charset="UTF-8">
+<script>
+    var valorProduto = 60;
+    console.log('Preço: R$ ' + valorProduto.toFixed(2));
+    console.log('À vista: R$ ' + valorProduto*0.90);
+    console.log('À vista: R$ ', (valorProduto - (valorProduto*10/100)).toFixed(2));
+    console.log('Ou 3x de: R$ ', (valorProduto/3).toFixed(2));
+</script>

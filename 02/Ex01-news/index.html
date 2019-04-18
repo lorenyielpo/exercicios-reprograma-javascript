@@ -13,13 +13,14 @@
     <div class="wrapper">
         <div class="news">
             <h1 class="news__title" id="formTitle">Se inscreva para receber mais informações</h1>
+            <p class="mensagem"></p>
             <form action="" class="news__form">
                 <div class="news__form-group">
                     <label for="newsInputEmail" class="news__label">
                         Email
                     </label>
                     <input type="email" class="news__input" id="newsInputEmail" 
-                        placeholder="email@exemplo.com.br">
+                        placeholder="email@exemplo.com.br" onblur="validacaoEmail(f1.email)">
                 </div>
                 <div class="news__form-group">
                     <button class="button news__button">Enviar</button>
@@ -27,5 +28,6 @@
             </form>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

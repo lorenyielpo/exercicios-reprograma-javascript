@@ -11,12 +11,18 @@ vizinhos (anterior e posterior)  -->
 <body>
     <h1>Exercicio 01</h1>
     <script>
-        var numero = Number(prompt('Insira um número'));
-        console.log(typeof numero);
-        console.log('o número é:' + numero);
+        // Isso é um comentário de uma linha em JS
+        /* Isso também é um comentário,
+        só que de várias
+        linhas*/
+        var numero = Number(prompt('Digite um número:'))
+        console.log(typeof numero)
+        console.log('O número digitado pelo usuário é '+ numero)
         var anterior = numero - 1;
         var posterior = numero + 1;
-        console.log('Os vizinhos do número ' + numero + ' são ' + anterior + ' e ' + posterior);
+        console.log('Os vizinhos do número '+ numero + ' são '+ anterior +' e '+ posterior)
+
+        console.log('Os vizinhos do número ',numero,' são ', anterior ,' e ', posterior)
     </script>
 </body>
 </html>

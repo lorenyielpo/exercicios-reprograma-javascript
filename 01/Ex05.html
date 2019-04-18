@@ -1,21 +1,12 @@
-<!-- Crie um programa que receba o valor do raio de uma circunferência e 
-calcule a sua área -->
+<!-- Crie um programa que receba o valor do raio 
+    de uma circunferência e calcule a sua área -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Exercicio 05</h1>
-    <script>
-    var valorRaio = Number(prompt('Qual o valor do raio?'));
-    var circuferencia = 2 * 3.14 * valorRaio;
-    var areaCirculo = 3.14 * (valorRaio * valorRaio);
-    console.log('A circuferência é ' + circuferencia + ' e a área é ' + areaCirculo)
-    </script>
-</body>
-</html>
+<meta charset="UTF-8">
+<script>
+function areaCirc(raio){
+    const PI = 3.14;
+    return PI*(raio**2);
+} 
+console.log(areaCirc(10))
+
+</script> 
